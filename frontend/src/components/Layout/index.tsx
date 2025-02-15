@@ -27,9 +27,11 @@ const Layout = () => {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
-          mt: 8,
+          p: { xs: 2, sm: 3 },
+          mt: { xs: 7, sm: 8 },
           width: '100%',
+          minHeight: '100vh',
+          backgroundColor: 'background.default',
           transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
